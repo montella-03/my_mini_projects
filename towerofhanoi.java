@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class TowerofHanoi {
-    public static void moveDisks(int n, char toTower, char auxTower, char fromTower) {
+    public static void moveDisks(int n, char fromTower, char toTower, char auxTower) {
         if (n == 1)
             System.out.println("move disk " + n + " from " + fromTower + " to " + toTower);
         else {

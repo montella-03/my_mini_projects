@@ -15,3 +15,26 @@ public class reversestring {
     }
     
 }
+
+// using stack.
+import java.util.Stack;
+
+import javax.swing.text.html.StyleSheet;
+
+public class Ques {
+
+    public static void main(String[] args) {
+        String name = "christopher";
+
+        Stack<Character> stack = new Stack<>();
+        for (int i = 0; i < name.length(); i++) {
+            stack.push(name.charAt(i));
+
+        }
+        System.out.println("reverse of name ");
+
+        while (!stack.isEmpty()) {
+            System.out.print(stack.pop());
+        }
+    }
+}

@@ -18,3 +18,20 @@ public class Ques {
         System.out.println(Arrays.toString(array));
     }
 }
+//
+public static void main(String[] args) {
+        int[] x = new int[]{5, 1, 4, 12, 7};
+        int n = x.length;
+        System.out.println("Original Array list is: " + Arrays.toString(x));
+
+        for(int i = 0; i < n - 1; ++i) {
+          // swapping of element occurs here
+            if (x[i] > x[i + 1]) {
+                int temp = x[i];
+                x[i] = x[i + 1];
+                x[i + 1] = temp;
+            }
+        }
+
+        System.out.println("The Sorted list is:     " + Arrays.toString(x));
+    }
